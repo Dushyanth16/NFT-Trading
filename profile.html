@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Trading Dashboard</title>
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>NFT Trading Dashboard</h2>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Trading</a></li>
+        <li><a href="#">Bank Transactions</a></li>
+        <li><a href="#">Balance</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main">
+      <button class="btn" onclick="toggleSidebar()">Toggle Sidebar</button>
+      <h1>Welcome to the NFT Trading Dashboard</h1>
+      <p>This dashboard allows you to trade NFTs with the help of banks.</p>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Asset Name</th>
+            <th>Current Owner</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Artwork #1</td>
+            <td>John Smith</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Artwork #2</td>
+            <td>Jane Doe</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Artwork #3</td>
+            <td>David Lee</td>
+            <td>$2500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Recent Bank Transactions</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Transaction Type</th>
+            <th>Amount</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>May 1, 2023</td>
+            <td>Deposit</td>
+            <td>$5000</td>
+            <td>$5000</td>
+          </tr>
+          <tr>
+            <td>May 2, 2023</td>
+            <td>Withdrawal</td>
+            <td>$1000</td>
+            <td>$4000</td>
+          </tr>
+          <tr>
+            <td>May 4, 2023</td>
+            <td>Deposit</td>
+            <td>$2000</td>
+            <td>$6000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Current Balance</h2>
+      <p>Your current balance is <span id="balance">$6000</span>.</p>
+    </div>
+
+    <script src="scriptp.js"></script>
+  </body>
+</html>
